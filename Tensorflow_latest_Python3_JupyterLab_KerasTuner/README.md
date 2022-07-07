@@ -1,6 +1,6 @@
 # Description of the Dockerfile
 Base image:
-- tensorflow/tensorflow:2.8.0-gpu-jupyter
+- tensorflow/tensorflow:latest-gpu-jupyter
 
 Additional softwares:
 - apt-utils
