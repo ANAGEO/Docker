@@ -2,7 +2,7 @@
 Base image:
 - ubuntu:focal
 
-Softwares:
+Additional softwares:
 - GRASS GIS 7.8.6-1~focal1
 - Python 3 (lastest)
 - R (lastest)
@@ -15,6 +15,5 @@ Softwares:
 - jupyterlab
 
 
-
 # Related usages: 
-- Project "Partimap"
+- Project "Mosquimap"
