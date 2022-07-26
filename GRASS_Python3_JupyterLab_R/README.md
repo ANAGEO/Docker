@@ -17,3 +17,8 @@ Additional softwares:
 
 # Related usages: 
 - Project "Mosquimap"
+
+
+
+# GRASS GIS Add-ons
+A section of the Dockerfile is dedicated for the installation of GRASS GIS Add-ons for OBIA processing. If you don't need them, remove of comment this section. If you need other, please adapt accordingly. 
