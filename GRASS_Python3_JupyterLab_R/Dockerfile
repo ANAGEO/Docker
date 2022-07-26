@@ -61,6 +61,12 @@ RUN apt-get -y install \
         grass-dev-doc \
         grass-gui
 
+# Install GRASS GIS Add-ons for OBIA processing
+RUN mkdir -p /tmp/tmpGRASSDATA/tmpLocation
+RUN grass -c EPSG:4326 /tmp/tmpGRASSDATA/tmpLocation/tmpMapset --exec g.extension i.segment.uspo
+RUN grass -c EPSG:4326 /tmp/tmpGRASSDATA/tmpLocation/tmpMapset --exec g.extension r.object.geometry
+RUN grass -c EPSG:4326 /tmp/tmpGRASSDATA/tmpLocation/tmpMapset --exec g.extension i.segment.stats
+
 # Reduce image size
 RUN apt-get autoremove -y && \
     apt-get clean -y
